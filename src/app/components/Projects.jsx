@@ -4,10 +4,25 @@ import SpotifinderThumbnail from "../images/spotifinder.png"
 import EcoPortalThumbnail from "../images/ecoportal.png"
 import LandConThumbnail from "../images/landcon.png"
 import ParstagramThumbnail from "../images/parstagram.png"
+import BrokeBlessingsThumbnail from "../images/brokeblessings.png"
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export default function Projects() {
   const projects = [
+		{
+			title: "Broke Blessings",
+			description:
+				"An online website that allows users to manage and list free items, claim free items, and discover items through a feed and filter options.",
+			image: BrokeBlessingsThumbnail,
+			github: "https://github.com/vilinh/free-stuff",
+		},
+		{
+			title: "Spotifinder",
+			description:
+				"A full stack web application where users can create profiles and receive Spotify playlist recommendations from other users based on location.",
+			image: SpotifinderThumbnail,
+			github: "https://github.com/KimLinhVu/Capstone-Project",
+		},
 		{
 			title: "Ecologistics Portal",
 			description:
@@ -23,13 +38,6 @@ export default function Projects() {
 			github: "https://github.com/hack4impact-calpoly/the-land-conservancy",
 		},
 		{
-			title: "Spotifinder",
-			description:
-				"A full stack web application where users can create profiles and receive Spotify playlist recommendations from other users based on location.",
-			image: SpotifinderThumbnail,
-			github: "https://github.com/KimLinhVu/Capstone-Project",
-		},
-		{
 			title: "Parstagram",
 			description:
 				"An Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments.",
@@ -42,7 +50,7 @@ export default function Projects() {
 		<div className="flex flex-col py-20 px-[7rem] w-full">
 			<h1 className="text-6xl text-black">Projects</h1>
 			{/* Project Cards */}
-			<div className="flex flex-wrap justify-between gap-y-10 mt-10">
+			<div className="flex flex-wrap gap-x-10 gap-y-10 mt-10">
         {projects.map((project, index) => (
           <ProjectCard 
             key={index}
@@ -59,7 +67,7 @@ export default function Projects() {
 
 const ProjectCard = ({ title, description, image, github }) => {
   return (
-		<div className="flex flex-col justify-between w-[450px] h-[450px] px-5 py-5 rounded-lg shadow-lg bg-slate-300">
+		<div className="flex flex-col justify-between w-[430px] h-[450px] px-5 py-5 rounded-lg shadow-lg bg-slate-300">
 			<div className="flex flex-col space-y-3">
 				<div className="flex justify-between">
 					<h2 className="text-4xl font-bold">{title}</h2>

@@ -5,7 +5,7 @@ export default function Header() {
 			<div className="flex flex-col gap-y-8">
 				<h1 className="text-6xl text-black">Hi, my name is Kim-Linh.</h1>
 				<p className="text-xl text-black">
-					Hi! I am a CS student in California. Learn more about me...
+					Hi! I am a CS student from California. Learn more about me...
 				</p>
 			</div>
 		</div>
