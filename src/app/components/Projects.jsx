@@ -48,7 +48,7 @@ export default function Projects() {
 
 	return (
 		<div className="flex flex-col py-20 px-[7rem] w-full">
-			<h1 className="text-6xl text-black">Projects</h1>
+			<h1 className="text-[65px] text-black font-black">Projects.</h1>
 			{/* Project Cards */}
 			<div className="flex flex-wrap gap-x-10 gap-y-10 mt-10">
         {projects.map((project, index) => (
@@ -67,24 +67,24 @@ export default function Projects() {
 
 const ProjectCard = ({ title, description, image, github }) => {
   return (
-		<div className="flex flex-col justify-between w-[430px] h-[450px] px-5 py-5 rounded-lg shadow-lg bg-slate-300">
+		<div className="flex flex-col justify-between w-[430px] h-[460px] px-5 py-5 rounded-lg shadow-lg bg-white">
 			<div className="flex flex-col space-y-3">
 				<div className="flex justify-between">
-					<h2 className="text-4xl font-bold">{title}</h2>
+					<h2 className="text-[28px] uppercase tracking-[0.05em] font-bold">{title}</h2>
 					{github && (
 						<Link href={github} rel="noopener noreferrer" target="_blank">
 							<GitHubLogoIcon className="cursor-pointer w-10 h-10 hover:scale-[1.05] transition duration-300" />
 						</Link>
 					)}
 				</div>
-				<p className="text-xl">{description}</p>
+				<p className="text-[1.2rem]">{description}</p>
 			</div>
 
 			<Image
 				src={image}
 				alt="Screenshot of project"
 				className="rounded-md h-[225px]"
-        width={500}
+				width={500}
 			/>
 		</div>
 	);
