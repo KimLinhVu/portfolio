@@ -47,7 +47,7 @@ export default function Projects() {
 	];
 
 	return (
-		<div className="flex flex-col py-20 px-[7rem] w-full">
+		<div id="projects" className="flex flex-col py-20 pl-[7rem] w-full">
 			<h1 className="text-[60px] text-black font-black">Projects.</h1>
 			{/* Project Cards */}
 			<div className="flex flex-wrap gap-x-10 gap-y-10 mt-10">

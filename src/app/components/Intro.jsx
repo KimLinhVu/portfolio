@@ -1,7 +1,7 @@
 
 export default function Intro() {
 	return (
-		<div className="flex flex-col px-[7rem]">
+		<div id="about" className="flex flex-col px-[7rem] py-20">
 			<div className="flex flex-col">
 				<h2 className="text-[18px] font-semibold uppercase tracking-[0.05em]">
 					About Me
