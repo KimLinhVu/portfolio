@@ -67,10 +67,12 @@ export default function Projects() {
 
 const ProjectCard = ({ title, description, image, github }) => {
   return (
-		<div className="flex flex-col justify-between w-[410px] h-[460px] px-5 py-5 rounded-lg shadow-lg bg-white">
+		<div className="flex flex-col justify-between w-[410px] h-[460px] px-5 py-5 rounded-lg shadow-md bg-white border-[2.5px] border-solid border-[#66a6b8]">
 			<div className="flex flex-col space-y-3">
 				<div className="flex justify-between">
-					<h2 className="text-[28px] uppercase tracking-[0.05em] font-bold">{title}</h2>
+					<h2 className="text-[28px] uppercase tracking-[0.05em] font-bold ">
+						{title}
+					</h2>
 					{github && (
 						<Link href={github} rel="noopener noreferrer" target="_blank">
 							<GitHubLogoIcon className="cursor-pointer w-10 h-10 hover:scale-[1.05] transition duration-300" />
